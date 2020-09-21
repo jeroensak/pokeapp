@@ -5,7 +5,7 @@ interface ErrorContextExpose {
 }
 
 export const ErrorContext = React.createContext<ErrorContextExpose>({
-  showError: (error: string) => {
+  showError: (_error: string) => {
     throw "ErrorContext used without provider";
   },
 });

@@ -10,12 +10,12 @@ export const useGetPokemonList = () => {
   React.useEffect(() => {
     (async () => {
       const list = await pokemonService.getListOfPokemons(100, 0);
-      if (list.error) {
+      if (list.error || !list.data) {
         showError("something went wrong");
         return;
       }
 
-      setData(list.data!.results);
+      setData(list.data.results);
     })();
   }, []);
 

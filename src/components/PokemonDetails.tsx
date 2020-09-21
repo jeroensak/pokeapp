@@ -1,6 +1,5 @@
 import React from "react";
 import { useGetPokemonDetails } from "../hooks/useGetPokemonDetails";
-import { Pokemon } from "../models/pokemon";
 import { PokemonSummary } from "../models/pokemonSummary";
 
 interface PokemonDetailsProps {

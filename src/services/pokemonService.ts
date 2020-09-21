@@ -17,7 +17,7 @@ class PokemonService {
   }
 
   public getListOfPokemons = async (limit: number, offset: number) => {
-    let queryParams = {
+    const queryParams = {
       limit: limit.toString(),
       offset: offset.toString(),
     };
